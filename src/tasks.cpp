@@ -9,6 +9,7 @@ using std::cout;
 using std::fill;
 using std::copy;
 
+
 // Задание 1
 void swap_args(int *lhs, int *rhs) {
     if (lhs and rhs) {
@@ -17,6 +18,7 @@ void swap_args(int *lhs, int *rhs) {
         *lhs = *lhs - *rhs;
     }
 }
+
 
 // Задание 2
 int **allocate_2d_array(int num_rows, int num_cols, int init_value) {
@@ -33,6 +35,7 @@ int **allocate_2d_array(int num_rows, int num_cols, int init_value) {
     return array_2d;
 }
 
+
 // Задание 3
 bool copy_2d_array(int **arr_2d_source, int **arr_2d_target, int num_rows, int num_cols) {
     if (arr_2d_source == nullptr || arr_2d_target == nullptr) return false;
@@ -46,6 +49,7 @@ bool copy_2d_array(int **arr_2d_source, int **arr_2d_target, int num_rows, int n
     return true;
 }
 
+
 // Задание 4
 void reverse_1d_array(vector<int> &arr) {
     int t, size = arr.size();
@@ -57,6 +61,7 @@ void reverse_1d_array(vector<int> &arr) {
         }
     }
 }
+
 
 // Задание 5
 void reverse_1d_array(int *arr_begin, int *arr_end) {
@@ -73,6 +78,7 @@ void reverse_1d_array(int *arr_begin, int *arr_end) {
     }
 }
 
+
 // Задание 6
 int *find_max_element(int *arr, int size) {
     if(arr == nullptr || size < 1) return nullptr;
@@ -84,6 +90,7 @@ int *find_max_element(int *arr, int size) {
     }
     return max_ptr;}
 
+
 // Задание 7
 vector<int> find_odd_numbers(vector<int> &arr) {
     if(arr.size() == 0) return {};
@@ -91,6 +98,7 @@ vector<int> find_odd_numbers(vector<int> &arr) {
     for(int i: arr) if (i % 2 != 0) list.push_back(i);
     return list;
 }
+
 
 // Задание 8
 vector<int> find_common_elements(vector<int> &arr_a, vector<int> &arr_b) {
